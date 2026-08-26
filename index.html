@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akmal B — Cyber Security Student & Developer</title>
+  <meta name="description" content="Portfolio of Akmal B, a Computer Science Engineering student specializing in Cyber Security at SRM Trichy, exploring Linux, networking, programming, and Cloud Security.">
+  <meta name="keywords" content="Akmal B, Cyber Security Student, SRM Trichy, Cloud Security, Linux, Networking, Python, C, Developer Portfolio">
+  <meta name="author" content="Akmal B">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/Akmal-cybersecurity">
+  <meta property="og:title" content="Akmal B — Cyber Security Student & Developer">
+  <meta property="og:description" content="Computer Science Engineering student specializing in Cyber Security at SRM Trichy, exploring Linux, networking, programming, and Cloud Security.">
+  <meta property="og:image" content="assets/images/akmal-profile-800.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Akmal B — Cyber Security Student & Developer">
+  <meta name="twitter:description" content="Computer Science Engineering student specializing in Cyber Security at SRM Trichy, exploring Linux, networking, programming, and Cloud Security.">
+  <meta name="twitter:image" content="assets/images/akmal-profile-800.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Akmal B",
+    "jobTitle": "Computer Science Engineering Student (Cyber Security)",
+    "affiliation": {
+      "@type": "EducationalOrganization",
+      "name": "SRM Trichy"
+    },
+    "knowsAbout": ["Cybersecurity", "Cloud Security", "Linux", "Computer Networking", "Python", "C Programming"],
+    "sameAs": [
+      "https://github.com/Akmal-cybersecurity",
+      "https://www.linkedin.com/in/akmal-b-136618416/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- 3D Particle Canvas Background -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <div class="page-wrapper">
+    <!-- Navigation Bar -->
+    <header class="navbar" id="main-navbar">
+      <div class="container navbar-container">
+        <a href="#hero" class="brand-logo" aria-label="Akmal B Home">
+          <div class="brand-mark">AB</div>
+          <span>Akmal B</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#journey" class="nav-link">Journey</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Navbar Actions (Theme Toggle & Mobile Menu) -->
+        <div class="nav-actions">
+          <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+            <!-- Moon Icon (Dark Mode active) -->
+            <svg class="dark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <!-- Sun Icon (Light Mode active) -->
+            <svg class="light-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <div>
+        <div class="mobile-drawer-header">
+          <div class="brand-logo">
+            <div class="brand-mark">AB</div>
+            <span>Akmal B</span>
+          </div>
+          <button class="mobile-menu-btn" id="mobile-drawer-close" aria-label="Close Menu" onclick="document.getElementById('mobile-drawer').classList.remove('is-open')">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#journey" class="mobile-nav-link">Journey</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+          <li><a href="#education" class="mobile-nav-link">Education</a></li>
+          <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+          <li><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-socials" style="margin-top: 2rem;">
+        <a href="https://github.com/Akmal-cybersecurity" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/akmal-b-136618416/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="mailto:sahulakmal805@gmail.com" class="social-icon-btn" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content Flow -->
+    <main id="main-content">
+      <!-- HERO SECTION -->
+      <section class="hero-section" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="status-badge font-mono">
+              <span class="status-pulse-dot"></span>
+              <span>Currently exploring Cloud Security</span>
+            </div>
+
+            <div class="hero-title-group">
+              <h1 class="hero-name">Akmal B</h1>
+              <p class="hero-role font-mono">Computer Science Engineering Student • Cyber Security</p>
+            </div>
+
+            <h2 class="hero-headline">Building the foundations of a secure digital future.</h2>
+
+            <p class="hero-bio">
+              I'm Akmal B, a Computer Science Engineering student specializing in Cyber Security at SRM Trichy. I’m building my foundations in Linux, networking, programming, and security while exploring the path toward Cloud Security.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore My Work</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+              <a href="#contact" class="btn btn-secondary font-mono text-xs" id="resume-cta-btn" title="Download Resume">Download Resume</a>
+            </div>
+
+            <div class="hero-socials">
+              <a href="https://github.com/Akmal-cybersecurity" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/akmal-b-136618416/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="mailto:sahulakmal805@gmail.com" class="social-icon-btn" aria-label="Email Akmal">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3D Profile Presentation with Authentic Photograph -->
+          <div class="hero-visual">
+            <div class="profile-3d-wrapper" data-tilt data-tilt-max="6" data-tilt-glare="true">
+              <div class="profile-card">
+                <div class="profile-image-container">
+                  <picture>
+                    <source srcset="assets/images/akmal-profile-800.webp" type="image/webp">
+                    <img src="assets/images/akmal-profile-800.png" alt="Akmal B — Computer Science and Cyber Security student" class="profile-img" width="800" height="800" loading="eager" fetchpriority="high">
+                  </picture>
+                </div>
+                <div class="profile-meta-overlay">
+                  <div class="profile-card-name">Akmal B</div>
+                  <div class="profile-card-role">Cyber Security Student</div>
+                  <div class="profile-card-institution">SRM Trichy • Class of 2030</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNICAL FOUNDATION TICKER / PILLS -->
+      <div class="foundation-section">
+        <div class="container">
+          <div class="foundation-pills-wrap" id="foundation-pills">
+            <!-- Rendered dynamically from portfolio-data.js -->
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="reveal-on-scroll">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">01 // PROFILE</span>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-desc">Building strong foundational knowledge and developing disciplined problem-solving methodologies in computer science and cybersecurity.</p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-text-wrap">
+              <div class="about-card" data-tilt data-tilt-max="3">
+                <p>I'm Akmal B, a Computer Science Engineering student specializing in Cyber Security at SRM Trichy.</p>
+                <p style="margin-top: 1rem;">My current focus is building strong fundamentals across Linux, networking, programming, and cybersecurity while exploring how modern systems can be designed, operated, and secured.</p>
+                <p style="margin-top: 1rem;">I'm particularly interested in exploring Cloud Security as I continue developing my technical foundation and discovering the areas of cybersecurity that I want to specialize in.</p>
+
+                <div class="about-card-meta">
+                  <div class="meta-field">
+                    <span class="meta-field-label">INSTITUTION</span>
+                    <span class="meta-field-val">SRM Trichy</span>
+                  </div>
+                  <div class="meta-field">
+                    <span class="meta-field-label">SPECIALIZATION</span>
+                    <span class="meta-field-val">Cyber Security</span>
+                  </div>
+                  <div class="meta-field">
+                    <span class="meta-field-label">GRADUATION</span>
+                    <span class="meta-field-val">2030</span>
+                  </div>
+                  <div class="meta-field">
+                    <span class="meta-field-label">CURRENT FOCUS</span>
+                    <span class="meta-field-val">Cloud Security</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3D Network Topology Element -->
+            <div class="about-3d-container">
+              <canvas id="about-3d-canvas" class="canvas-3d-widget"></canvas>
+              <span class="widget-caption">INTERACTIVE 3D SYSTEM ARCHITECTURE // HOVER TO TILT</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="reveal-on-scroll">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">02 // CAPABILITIES</span>
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-desc">Practical technologies and core systems I actively practice, study, and implement in my academic and personal technical development.</p>
+          </div>
+
+          <div class="skills-grid" id="skills-grid">
+            <!-- Rendered dynamically from portfolio-data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- LEARNING JOURNEY SECTION -->
+      <section id="journey" class="reveal-on-scroll">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">03 // ROADMAP</span>
+            <h2 class="section-title">My Learning Journey</h2>
+            <p class="section-desc">A structured technical progression from foundational computation and low-level programming toward cloud defense and advanced security specializations.</p>
+          </div>
+
+          <div class="journey-roadmap" id="journey-nodes">
+            <!-- Rendered dynamically from portfolio-data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- AREAS OF EXPLORATION SECTION -->
+      <section id="areas" class="reveal-on-scroll">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">04 // SPECIALIZATION PATHWAYS</span>
+            <h2 class="section-title">Areas I'm Exploring</h2>
+            <p class="section-desc">Investigating different facets of cybersecurity to understand modern threat models, defensive architectures, and cloud resilience.</p>
+          </div>
+
+          <div class="areas-grid" id="areas-grid">
+            <!-- Rendered dynamically from portfolio-data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- SELECTED PROJECTS SECTION -->
+      <section id="projects" class="reveal-on-scroll">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">05 // WORK & EXPERIMENTS</span>
+            <h2 class="section-title">Selected Projects</h2>
+            <p class="section-desc">Practical applications, security labs, and code repositories developed through continuous hands-on learning.</p>
+          </div>
+
+          <div id="projects-container">
+            <!-- Rendered dynamically from portfolio-data.js (Honest empty state placeholder) -->
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE & JOURNEY SECTION -->
+      <section id="experience" class="reveal-on-scroll">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">06 // BACKGROUND</span>
+            <h2 class="section-title">Experience & Journey</h2>
+            <p class="section-desc">Documenting practical experiences, academic initiatives, hackathons, and future engineering opportunities.</p>
+          </div>
+
+          <div id="experience-container">
+            <!-- Rendered dynamically from portfolio-data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section id="education" class="reveal-on-scroll">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">07 // ACADEMICS</span>
+            <h2 class="section-title">Education</h2>
+            <p class="section-desc">Formal university education establishing deep computational, networking, and security foundations.</p>
+          </div>
+
+          <div id="education-card">
+            <!-- Rendered dynamically from portfolio-data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS SECTION -->
+      <section id="certifications" class="reveal-on-scroll">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">08 // CREDENTIALS</span>
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-desc">Verified technical credentials and industry certifications targeted along my cybersecurity learning pathway.</p>
+          </div>
+
+          <div id="certifications-container">
+            <!-- Rendered dynamically from portfolio-data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ACHIEVEMENTS SECTION -->
+      <section id="achievements" class="reveal-on-scroll">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">09 // MILESTONES</span>
+            <h2 class="section-title">Achievements & Milestones</h2>
+            <p class="section-desc">Notable technical events, hackathon participation, and milestones will be documented here.</p>
+          </div>
+
+          <div id="achievements-container">
+            <!-- Rendered dynamically from portfolio-data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- CLOUD SECURITY EXPLORATION DEDICATED SECTION -->
+      <section id="cloud-security" class="cloud-section reveal-on-scroll">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">10 // FOCUS AREA</span>
+            <h2 class="section-title">Exploring Cloud Security</h2>
+            <p class="section-desc">A deliberate exploration of cloud-native architecture, identity governance, zero trust models, and scalable perimeter defense.</p>
+          </div>
+
+          <div class="cloud-grid">
+            <div>
+              <div class="cloud-quote-box" id="cloud-quote">
+                "Cloud Security is currently the area I am most interested in exploring as I build a broader foundation in cybersecurity."
+              </div>
+              <div class="cloud-pillars-grid" id="cloud-pillars">
+                <!-- Rendered dynamically -->
+              </div>
+            </div>
+
+            <!-- 3D Cloud Mesh Widget -->
+            <div class="about-3d-container">
+              <canvas id="cloud-3d-canvas" class="canvas-3d-widget"></canvas>
+              <span class="widget-caption">DISTRIBUTED CLOUD SECURITY PERIMETER // 3D PROJECTION</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GITHUB / BUILDING SECTION -->
+      <section id="github" class="reveal-on-scroll">
+        <div class="container">
+          <div class="github-card" data-tilt data-tilt-max="3">
+            <div class="github-info">
+              <span class="section-tag">BUILDING & EXPERIMENTING</span>
+              <h3 class="github-title">Follow My Code on GitHub</h3>
+              <p>Explore my repositories, code exercises, Linux configurations, and upcoming security experiments directly on GitHub.</p>
+            </div>
+            <a href="https://github.com/Akmal-cybersecurity" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>View GitHub Profile</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="reveal-on-scroll">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">11 // GET IN TOUCH</span>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-desc">I'm always open to learning, discussing technology, collaborating on projects, and connecting with people interested in cybersecurity and software.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Your Name</label>
+                  <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Smith" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Your Email</label>
+                  <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-message" class="form-label">Message</label>
+                  <textarea id="form-message" class="form-textarea" placeholder="Hello Akmal, I would like to connect regarding..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  <span>Send Message</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+                <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+              </form>
+            </div>
+
+            <div class="contact-sidebar">
+              <div class="direct-contact-box">
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">DIRECT EMAIL</span>
+                    <a href="mailto:sahulakmal805@gmail.com" class="method-value font-mono">sahulakmal805@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">LINKEDIN</span>
+                    <a href="https://www.linkedin.com/in/akmal-b-136618416/" target="_blank" rel="noopener noreferrer" class="method-value">linkedin.com/in/akmal-b</a>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">LOCATION</span>
+                    <span class="method-value">Trichy, Tamil Nadu, India</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3D Node Visualization -->
+              <div class="about-3d-container" style="min-height: 220px; padding: 1rem;">
+                <canvas id="contact-3d-canvas" class="canvas-3d-widget" style="height: 180px;"></canvas>
+                <span class="widget-caption">SECURE COMMUNICATION PATHWAY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="brand-logo">
+              <div class="brand-mark">AB</div>
+              <span>Akmal B</span>
+            </div>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+              Computer Science Engineering Student specializing in Cyber Security at SRM Trichy (Class of 2030).
+            </p>
+          </div>
+
+          <div class="hero-socials" style="margin-top: 0;">
+            <a href="https://github.com/Akmal-cybersecurity" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/akmal-b-136618416/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:sahulakmal805@gmail.com" class="social-icon-btn" aria-label="Email Akmal">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>© <span id="current-year">2026</span> Akmal B. All rights reserved.</div>
+          <div class="font-mono text-xs">SRM TRICHY • CYBER SECURITY</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top" title="Back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </button>
+  </div>
+
+  <!-- Main JavaScript Module Entry -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
