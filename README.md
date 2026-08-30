@@ -35,7 +35,7 @@ npx serve .
 
 ---
 
-## 📁 Project Structure
+## 📁 Structure
 
 ```
 Akmal-Portfolio/
@@ -60,19 +60,6 @@ Akmal-Portfolio/
 │   └── theme.js                  # Dark/Light theme manager
 ├── index.html                    # Semantic HTML5 application shell
 └── README.md
-```
-
----
-
-## ✏️ How to Add Projects, Certifications, or Experience
-
-Open `js/data/portfolio-data.js`:
-- To add a project, append an object to `PORTFOLIO_DATA.projects`.
-- To add a certification, append an object to `PORTFOLIO_DATA.certifications`.
-- To add an achievement, append an object to `PORTFOLIO_DATA.achievements`.
-- To update your resume link, set `PORTFOLIO_DATA.socials.resumeUrl`.
-
-The user interface will automatically detect new items and render them!
 
 ---
 
