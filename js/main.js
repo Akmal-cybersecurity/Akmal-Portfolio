@@ -7,7 +7,6 @@
 import { PORTFOLIO_DATA } from './data/portfolio-data.js';
 import { themeManager } from './theme.js';
 import { ParticleField } from './canvas/particle-field.js';
-import { NetworkVisual3D } from './canvas/network-visual.js';
 import { CustomCursor } from './interactions/cursor.js';
 import { TiltController } from './interactions/tilt.js';
 
@@ -29,30 +28,21 @@ class PortfolioApp {
   }
 
   initVisualEngines() {
-    // 1. Background Particle Field
+    // 1. Background Particle Field (Kept active)
     try {
       this.particleField = new ParticleField('particle-canvas');
     } catch (e) {
       console.warn('Particle canvas fallback active:', e);
     }
 
-    // 2. 3D Geometric Network Visualizers
-    try {
-      this.aboutVisual = new NetworkVisual3D('about-3d-canvas', 'network');
-      this.cloudVisual = new NetworkVisual3D('cloud-3d-canvas', 'cloud-mesh');
-      this.contactVisual = new NetworkVisual3D('contact-3d-canvas', 'contact-node');
-    } catch (e) {
-      console.warn('3D network visual fallback active:', e);
-    }
-
-    // 3. Custom Precision Cursor
+    // 2. Custom Precision Cursor
     try {
       this.customCursor = new CustomCursor();
     } catch (e) {
       console.warn('Cursor fallback:', e);
     }
 
-    // 4. 3D Tilt Micro-interactions
+    // 3. 3D Tilt Micro-interactions
     try {
       this.tiltController = new TiltController();
     } catch (e) {
@@ -70,7 +60,6 @@ class PortfolioApp {
     this.renderEducation();
     this.renderCertifications();
     this.renderAchievements();
-    this.renderCloudSecurity();
   }
 
   renderTechnicalFoundation() {
@@ -382,22 +371,6 @@ class PortfolioApp {
           </p>
         </div>
       `;
-    }
-  }
-
-  renderCloudSecurity() {
-    const quoteEl = document.getElementById('cloud-quote');
-    const pillarsEl = document.getElementById('cloud-pillars');
-    if (quoteEl) quoteEl.innerText = PORTFOLIO_DATA.cloudSecurityExploration.quote;
-
-    if (pillarsEl) {
-      pillarsEl.innerHTML = PORTFOLIO_DATA.cloudSecurityExploration.pillars.map((p, idx) => `
-        <div class="cloud-pillar-card" data-tilt data-tilt-max="3">
-          <div class="pillar-num font-mono">0${idx + 1}</div>
-          <h3 class="pillar-title">${p.title}</h3>
-          <p class="pillar-desc">${p.description}</p>
-        </div>
-      `).join('');
     }
   }
 

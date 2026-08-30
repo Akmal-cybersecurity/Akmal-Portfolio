@@ -322,29 +322,5 @@ export const PORTFOLIO_DATA = {
       "Algorithms & Data Structures in C/Python",
       "Information Security & Cryptography"
     ]
-  },
-
-  cloudSecurityExploration: {
-    title: "Exploring Cloud Security",
-    subtitle: "A deliberate path from foundational systems to distributed cloud resilience",
-    quote: "Cloud Security is currently the area I am most interested in exploring as I build a broader foundation in cybersecurity.",
-    pillars: [
-      {
-        title: "Infrastructure as Code & Hardening",
-        description: "Understanding how virtual networks, storage buckets, and serverless compute primitives can be locked down from the initial commit."
-      },
-      {
-        title: "Identity & Access Management (IAM)",
-        description: "Studying least-privilege policies, service account delegations, zero-trust architectures, and federated identity flows."
-      },
-      {
-        title: "Network Perimeter & Virtual VPCs",
-        description: "Analyzing VPC peering, security group rule matrices, ingress/egress filtering, and cloud network telemetry."
-      },
-      {
-        title: "Continuous Monitoring & Guardrails",
-        description: "Exploring automated policy evaluation, security posture management, and audit log analysis across cloud environments."
-      }
-    ]
   }
 };

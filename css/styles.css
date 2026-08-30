@@ -785,30 +785,16 @@ section {
 }
 
 /* --- About Section --- */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3.5rem;
-  align-items: center;
-}
-
-@media (max-width: 992px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.about-text-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+.about-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .about-card {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 2.5rem;
   position: relative;
 }
 
@@ -845,33 +831,6 @@ section {
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--text-primary);
-}
-
-.about-3d-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 2rem;
-  min-height: 380px;
-  position: relative;
-}
-
-.canvas-3d-widget {
-  width: 100%;
-  height: 300px;
-  display: block;
-}
-
-.widget-caption {
-  margin-top: 0.75rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
 }
 
 /* --- Skills Section --- */
@@ -1398,82 +1357,6 @@ section {
 
 .timeline-empty-step.is-future .step-bullet {
   background: var(--border-subtle);
-}
-
-/* --- Cloud Security Exploration Section --- */
-.cloud-section {
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border-subtle);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.cloud-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3.5rem;
-  align-items: center;
-}
-
-@media (max-width: 992px) {
-  .cloud-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.cloud-quote-box {
-  background: var(--bg-card);
-  border-left: 3px solid var(--accent-blue);
-  padding: 1.5rem;
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  font-size: 1.1rem;
-  color: var(--text-primary);
-  font-style: italic;
-  margin: 1.5rem 0;
-}
-
-.cloud-pillars-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-}
-
-@media (max-width: 600px) {
-  .cloud-pillars-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.cloud-pillar-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  transition: all var(--transition-normal);
-}
-
-.cloud-pillar-card:hover {
-  border-color: var(--border-focus);
-  transform: translateY(-2px);
-}
-
-.pillar-num {
-  font-size: 0.78rem;
-  color: var(--accent-blue);
-  font-weight: 600;
-}
-
-.pillar-title {
-  font-size: 1.05rem;
-  font-weight: 600;
-}
-
-.pillar-desc {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
 }
 
 /* --- GitHub Showcase Section --- */
